@@ -41,3 +41,9 @@ function wpsfp_validate_comment($commentdata) {
 }
 
 add_filter('preprocess_comment', 'wpsfp_validate_comment');
+
+
+
+// Load Elementor Pro integration.
+require_once plugin_dir_path(__FILE__) .
+    'includes/elementor-integration.php';
